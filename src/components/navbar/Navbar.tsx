@@ -11,12 +11,15 @@ export const Navbar = ({ setIsInfoModalOpen, setIsStatsModalOpen }: Props) => {
   return (
     <div className="navbar">
       <div className="navbar-banner px-5 py-2 bg-amber-200">
-        <p className="text-sm italic mx-5 text-center">
-          Jugá a nuestro nuevo juego:{' '}
-          <a className="underline font-bold" href="https://www.conexionesargentinas.com.ar">
-            ConexionesArgentinas
-          </a>!
-        </p>
+        <div className="text-sm mx-5 text-center">
+          <span className="italic">Que todos los chicos en Argentina puedan leer{' '}</span>
+          <span>🤍{' '}</span>
+          <span className="italic">Ayudá donando</span>
+          <span>{' '}</span>
+          <a className="underline italic font-bold" href="https://www.leer.org/donar">
+            leer.org/donar
+          </a>
+        </div>
       </div>
       <div className="navbar-content px-5">
         <InformationCircleIcon
