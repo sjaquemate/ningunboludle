@@ -1,5 +1,5 @@
 
-import "./styles/conexiones.css";
+// import "./styles/conexiones.css"; // fix this, makes boludle.com white bg
 import { twMerge } from 'tailwind-merge';
 import { useEffect, useState } from 'react';
 import { SolutionRow } from './components/SolutionRow';

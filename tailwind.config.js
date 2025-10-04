@@ -1,14 +1,20 @@
-// module.exports = {
-//   content: ['./src/**/*.{js,jsx,ts,tsx}'],
-//   darkMode: 'class',
-//   theme: {
-//     extend: {},
-//   },
-//   plugins: [],
-// }
+module.exports = {
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  content: ['./src/**/conexiones/**/*.{js,jsx,ts,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {},
+  },
+  plugins: [],
   darkMode: ["class"],
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   prefix: "",
