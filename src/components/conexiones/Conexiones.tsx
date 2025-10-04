@@ -1,16 +1,17 @@
 
+import "./styles/conexiones.css";
 import { twMerge } from 'tailwind-merge';
 import { useEffect, useState } from 'react';
 import { SolutionRow } from './components/SolutionRow';
-import Mate from './assets/mate.png'
-import { useAlertState, useContainer, useDelay } from './hooks';
-import { emptyGrouping, useGroupings } from './words';
+import Mate from '../../assets/mate.png';
 import { InfoModal } from './modals/InfoModal';
 import { EndScreenModal } from './modals/EndScreenModal';
-import { useGameState } from './useGameState';
 import { InfoIcon } from './components/InfoIcon';
-import { Tile } from './Tile';
 import { Button } from './components/Button';
+import { Tile } from "./Tile";
+import { emptyGrouping, useGroupings } from "./words";
+import { useAlertState, useContainer, useDelay } from "./hooks";
+import { useGameState } from "./useGameState";
 
 function RemainingDot({ active }: { active?: boolean }) {
   const color = active ? 'text-yellow-400' : 'text-neutral-600'
